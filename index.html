@@ -2,13 +2,38 @@
 <html lang="en-US">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Rahmatullo - Portfolio</title>
-    <meta name="description" content="Rahmatullo - Portfolio/CV/Resume" />
+    <title>Rahmatullo Kholov - Senior Software Engineer | Full-Stack Developer</title>
+    <meta name="description" content="Rahmatullo Kholov is a Senior Software Engineer specializing in .NET, PHP, and Full-Stack Development. Based in New York, USA with expertise in DevOps, Azure, and modern web technologies." />
+    <meta name="keywords" content="Senior Software Engineer, Full-Stack Developer, .NET Developer, PHP Developer, DevOps Engineer, New York, USA" />
+    <meta name="author" content="Rahmatullo Kholov" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rahajustone.github.io/" />
+    <meta property="og:title" content="Rahmatullo Kholov - Senior Software Engineer" />
+    <meta property="og:description" content="Senior Software Engineer specializing in .NET, PHP, and Full-Stack Development" />
+    <meta property="og:image" content="https://rahajustone.github.io/images/profilephoto.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://rahajustone.github.io/" />
+    <meta property="twitter:title" content="Rahmatullo Kholov - Senior Software Engineer" />
+    <meta property="twitter:description" content="Senior Software Engineer specializing in .NET, PHP, and Full-Stack Development" />
+    <meta property="twitter:image" content="https://rahajustone.github.io/images/profilephoto.png" />
+    
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
+    <meta name="theme-color" content="#FF4C60" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
     <!-- STYLESHEETS -->
     <link
       rel="stylesheet"
@@ -19,9 +44,10 @@
     <link rel="stylesheet" href="css/all.min.css" type="text/css" media="all" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link
       rel="stylesheet"
@@ -38,6 +64,32 @@
       media="all"
     />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rahmatullo Kholov",
+      "jobTitle": "Senior Software Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Microsoft"
+      },
+      "url": "https://rahajustone.github.io/",
+      "sameAs": [
+        "https://www.linkedin.com/in/rahmatullo-kholov-a3a359100/",
+        "https://github.com/rahajustone"
+      ],
+      "knowsAbout": ["Software Development", ".NET", "PHP", "JavaScript", "DevOps", "Azure"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "New York",
+        "addressCountry": "US"
+      }
+    }
+    </script>
+    
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -45,6 +97,14 @@
   </head>
 
   <body>
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+      <button id="darkModeToggle" class="btn-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+      </button>
+    </div>
+
     <!-- Preloader -->
     <div id="preloader" class="light">
       <div class="outer">
@@ -121,10 +181,13 @@
             <a href="#about"><i class="icon-user-following"></i></a>
           </li>
           <li>
-            <a href="#services"><i class="icon-briefcase"></i></a>
+            <a href="#skills"><i class="icon-briefcase"></i></a>
           </li>
           <li>
             <a href="#experience"><i class="icon-graduation"></i></a>
+          </li>
+          <li>
+            <a href="#achievements"><i class="icon-trophy"></i></a>
           </li>
           <li>
             <a href="#works"><i class="icon-layers"></i></a>
@@ -155,38 +218,55 @@
             />
             <!-- info -->
             <h1 class="mb-2 mt-0">Rahmatullo Kholov</h1>
+            <p class="lead mb-3">Senior Software Engineer at Microsoft</p>
             <span
               >I'm a
               <span class="text-rotating"
-                >Senior Software Engineer, Back-End Developer, Full-Stack
-                Developer, Front-End developer</span
+                >Senior Software Engineer, Full-Stack Developer, DevOps Engineer, Cloud Architect</span
               ></span
             >
+            <p class="mt-3 mb-4">Highly skilled software engineer with extensive experience designing and building robust, scalable solutions across frontend, backend, and cloud technologies. Proficient in modern frameworks including React, Angular, and .NET, with deep expertise deploying and managing applications on Microsoft Azure and AWS.</p>
+            
             <!-- social icons -->
             <ul class="social-icons light list-inline mb-0 mt-4">
               <li class="list-inline-item">
                 <a
                   href="https://www.linkedin.com/in/rahmatullo-kholov-a3a359100/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
                   ><i class="fab fa-linkedin"></i
                 ></a>
               </li>
               <li class="list-inline-item">
                 <a href="https://github.com/rahajustone"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
                   ><i class="fab fa-github"></i
                 ></a>
               </li>
               <li class="list-inline-item">
-                <a href="https://www.instagram.com/kh_rahmatullo/"
-                  ><i class="fab fa-instagram"></i
+                <a href="https://medium.com/@kh.rahmatullo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Medium"
+                  ><i class="fab fa-medium"></i
                 ></a>
               </li>
               <li class="list-inline-item">
-                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://stackoverflow.com/users/24216574"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Stack Overflow"
+                  ><i class="fab fa-stack-overflow"></i
+                ></a>
               </li>
             </ul>
             <!-- buttons -->
             <div class="mt-4">
-              <a href="#contact" class="btn btn-default">Hire me</a>
+              <a href="#contact" class="btn btn-default me-3">Get In Touch</a>
+              <a href="RahmatulloKholov.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Download Resume</a>
             </div>
           </div>
           <!-- scroll down mouse wheel -->
@@ -772,104 +852,32 @@
             <div class="col-md-9 triangle-left-md triangle-top-sm">
               <div class="rounded bg-white shadow-dark padding-30">
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                     <!-- about text -->
                     <p>
-                      I am Rahmatullo, as a Senior Software Engineer from Texas,
-                      United State. Innovative, service-oriented professional
-                      with comprehensive experience leveraging technical,
-                      analytical, and problem-solving skills to create dynamic,
-                      high-speed websites, apps and software’s. Skilled in
-                      designing robust and user-friendly applications.roficient
-                      in writing well-designed, testable and efficient code
-                      using current best practices. Proficient in
-                      troubleshooting and debugging applications.
+                      I'm Rahmatullo Kholov, a Senior Software Engineer at Microsoft with over 11 years of proven experience in delivering innovative software solutions. 
+                      My expertise lies in architecting, developing, and deploying scalable, secure, and high-performance applications, utilizing a diverse technical skillset 
+                      that includes C#, JavaScript/TypeScript, PHP, C, and C++.
                     </p>
-                    <div class="mt-3">
-                      <a
-                        href="./RahmatulloKholov.pdf"
-                        class="btn btn-default"
-                        target="_blank"
-                        >Download CV</a
-                      >
-                    </div>
+                    <p>
+                      Currently at Microsoft, I focus on internal automation tools, Azure DevOps, sophisticated CI/CD pipelines, 
+                      and cutting-edge cloud-native development. I successfully manage and optimize more than 3,000 pipelines across multiple teams, 
+                      creating custom automation solutions that have significantly boosted team productivity—achieving improvements of up to 70%.
+                    </p>
+                    <p>
+                      My technical proficiency spans modern, in-demand frameworks such as React, Angular, and .NET, combined with extensive hands-on experience 
+                      in cloud platforms like Microsoft Azure and AWS. I am passionate about developing robust, intuitive, and high-quality software solutions, 
+                      and actively mentor junior developers, nurturing team growth and technical excellence.
+                    </p>
+                    <p>
+                      Outside my professional role, I actively contribute to open-source projects, 
+                      author technical articles on Medium, and continually explore emerging technologies to stay at the forefront of the software development industry.
+                    </p>
+
                     <div
                       class="spacer d-md-none d-lg-none"
                       data-height="30"
                     ></div>
-                  </div>
-                  <div class="col-md-6">
-                    <!-- skill item -->
-                    <div class="skill-item">
-                      <div class="skill-info clearfix">
-                        <h4 class="float-left mb-3 mt-0">Development</h4>
-                        <span class="float-right">85%</span>
-                      </div>
-                      <div class="progress">
-                        <div
-                          class="progress-bar data-background"
-                          role="progressbar"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                          aria-valuenow="85"
-                          data-color="#FFD15C"
-                        ></div>
-                      </div>
-                      <div class="spacer" data-height="20"></div>
-                    </div>
-                    <!-- skill item -->
-                    <div class="skill-item">
-                      <div class="skill-info clearfix">
-                        <h4 class="float-left mb-3 mt-0">Back-End</h4>
-                        <span class="float-right">95%</span>
-                      </div>
-                      <div class="progress">
-                        <div
-                          class="progress-bar data-background"
-                          role="progressbar"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                          aria-valuenow="95"
-                          data-color="#FF4C60"
-                        ></div>
-                      </div>
-                      <div class="spacer" data-height="20"></div>
-                    </div>
-                    <!-- skill item -->
-                    <div class="skill-item">
-                      <div class="skill-info clearfix">
-                        <h4 class="float-left mb-3 mt-0">Front-End</h4>
-                        <span class="float-right">95%</span>
-                      </div>
-                      <div class="progress">
-                        <div
-                          class="progress-bar data-background"
-                          role="progressbar"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                          aria-valuenow="95"
-                          data-color="#6C6CE5"
-                        ></div>
-                      </div>
-                      <div class="spacer" data-height="20"></div>
-                    </div>
-                    <!-- skill item -->
-                    <div class="skill-item">
-                      <div class="skill-info clearfix">
-                        <h4 class="float-left mb-3 mt-0">DevOps</h4>
-                        <span class="float-right">60%</span>
-                      </div>
-                      <div class="progress">
-                        <div
-                          class="progress-bar data-background"
-                          role="progressbar"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                          aria-valuenow="60"
-                          data-color="#7C8CE5"
-                        ></div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -883,7 +891,7 @@
               <div class="fact-item">
                 <span class="icon icon-fire"></span>
                 <div class="details">
-                  <h3 class="mb-0 mt-0 number"><em class="count">10</em>+</h3>
+                  <h3 class="mb-0 mt-0 number"><em class="count">30</em>+</h3>
                   <p class="mb-0">Projects completed</p>
                 </div>
               </div>
@@ -892,14 +900,10 @@
             <div class="col-md-3 col-sm-6">
               <!-- fact item -->
               <div class="fact-item">
-                <!-- <i class="fab fa-hackerrank"></i> -->
-                <span
-                  class="icon fab fa-hackerrank"
-                  style="color: #82c91e"
-                ></span>
+                <span class="icon fab fa-microsoft" style="color: #00a4ef"></span>
                 <div class="details">
-                  <h3 class="mb-0 mt-0 number"><em class="count">968</em></h3>
-                  <p class="mb-0">HackerRank</p>
+                  <h3 class="mb-0 mt-0 number"><em class="count">3000</em>+</h3>
+                  <p class="mb-0">Pipelines Managed</p>
                 </div>
               </div>
               <div class="spacer d-md-none d-lg-none" data-height="30"></div>
@@ -920,353 +924,402 @@
               <div class="fact-item">
                 <span class="icon icon-badge"></span>
                 <div class="details">
-                  <h3 class="mb-0 mt-0 number"><em class="count">35</em></h3>
-                  <p class="mb-0">Nominees winner</p>
+                  <h3 class="mb-0 mt-0 number"><em class="count">70</em>%</h3>
+                  <p class="mb-0">Performance Boost</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- section services -->
-      <section id="services">
+      
+      <!-- Experience Section -->
+      <section id="experience" class="section">
         <div class="container">
-          <!-- section title -->
-          <h2 class="section-title wow fadeInUp">Skills</h2>
-          <div class="spacer" data-height="60"></div>
           <div class="row">
-            <div class="col-md-6">
-              <!-- timeline wrapper -->
-              <div
-                class="timeline web bg-white rounded shadow-dark padding-30 overflow-hidden"
-              >
-                <!-- timeline item -->
-                <div class="timeline-container wow fadeInUp">
-                  <div class="content">
-                    <h3 class="title">WEB DEVELOPEMENT</h3>
-                  </div>
-                  <!-- skill item -->
-                  <div class="skill-item mt-3">
-                    <div class="skill-info clearfix">
-                      <h4 class="float-left mb-3 mt-0">
-                        .NET (<span class="text-secondary"
-                          >.Net Core, Entity Framework, LINQ </span
-                        >)
-                      </h4>
-                      <span class="float-right">95%</span>
-                    </div>
-                    <div class="progress">
-                      <div
-                        class="progress-bar data-background"
-                        role="progressbar"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                        aria-valuenow="95"
-                        data-color="#3a33af"
-                      ></div>
-                    </div>
-                    <div class="spacer" data-height="20"></div>
-                  </div>
-                  <!-- skill item -->
-                  <div class="skill-item">
-                    <div class="skill-info clearfix">
-                      <h4 class="float-left mb-3 mt-0">
-                        PHP (<span class="text-secondary"
-                          >Symfony, Laravel, Phalcon </span
-                        >)
-                      </h4>
-                      <span class="float-right">95%</span>
-                    </div>
-                    <div class="progress">
-                      <div
-                        class="progress-bar data-background"
-                        role="progressbar"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                        aria-valuenow="95"
-                        data-color="#FF4C60"
-                      ></div>
-                    </div>
-                    <div class="spacer" data-height="20"></div>
-                  </div>
-                  <!-- skill item -->
-                  <div class="skill-item">
-                    <div class="skill-info clearfix">
-                      <h4 class="float-left mb-3 mt-0">
-                        JavaScript (<span class="text-secondary"
-                          >JQuery, Angular </span
-                        >)
-                      </h4>
-                      <span class="float-right">95%</span>
-                    </div>
-                    <div class="progress">
-                      <div
-                        class="progress-bar data-background"
-                        role="progressbar"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                        aria-valuenow="95"
-                        data-color="#ffcc49"
-                      ></div>
-                    </div>
-                    <div class="spacer" data-height="20"></div>
-                  </div>
-                  <!-- skill item -->
-                  <div class="skill-item">
-                    <div class="skill-info clearfix">
-                      <h4 class="float-left mb-3 mt-0">
-                        HTML5/CSS3 (<span class="text-secondary"
-                          >Bootstrap </span
-                        >)
-                      </h4>
-                      <span class="float-right">95%</span>
-                    </div>
-                    <div class="progress">
-                      <div
-                        class="progress-bar data-background"
-                        role="progressbar"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                        aria-valuenow="95"
-                        data-color="#45d7b5"
-                      ></div>
-                    </div>
-                    <div class="spacer" data-height="20"></div>
-                  </div>
-                </div>
-
-                <!-- main line -->
-                <span class="line"></span>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <!-- timeline wrapper -->
-              <div
-                class="timeline code bg-white rounded shadow-dark padding-30 overflow-hidden"
-              >
-                <!-- timeline item -->
-                <div class="timeline-container wow fadeInUp">
-                  <div class="content">
-                    <h3 class="title">SOFTWARE DEVELOPEMENT</h3>
-                  </div>
-                  <!-- skill item -->
-                  <div class="skill-item mt-3">
-                    <div class="skill-info clearfix">
-                      <h4 class="float-left mb-3 mt-0">C#</h4>
-                      <span class="float-right">95%</span>
-                    </div>
-                    <div class="progress">
-                      <div
-                        class="progress-bar progress-bar-striped data-background"
-                        role="progressbar"
-                        ria-valuemin="0"
-                        aria-valuemax="100"
-                        aria-valuenow="95"
-                        data-color="#3a33af"
-                      ></div>
-                    </div>
-                    <div class="spacer" data-height="20"></div>
-                  </div>
-                  <!-- skill item -->
-                  <div class="skill-item">
-                    <div class="skill-info clearfix">
-                      <h4 class="float-left mb-3 mt-0">
-                        Version Control (
-                        <span class="text-secondary"
-                          >Git, Github, Bit Bucket, Jira
-                        </span>
-                        )
-                      </h4>
-                      <span class="float-right">95%</span>
-                    </div>
-                    <div class="progress">
-                      <div
-                        class="progress-bar progress-bar-striped data-background"
-                        role="progressbar"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                        aria-valuenow="95"
-                        data-color="#FF4C60"
-                      ></div>
-                    </div>
-                    <div class="spacer" data-height="20"></div>
-                  </div>
-                  <!-- skill item -->
-                  <div class="skill-item">
-                    <div class="skill-info clearfix">
-                      <h4 class="float-left mb-3 mt-0">
-                        Database (<span class="text-secondary"
-                          >MS SQl Server, SQL, MySQL, Postgres </span
-                        >)
-                      </h4>
-                      <span class="float-right">95%</span>
-                    </div>
-                    <div class="progress">
-                      <div
-                        class="progress-bar data-background progress-bar-striped"
-                        role="progressbar"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                        aria-valuenow="95"
-                        data-color="#ffcc49"
-                      ></div>
-                    </div>
-                    <div class="spacer" data-height="20"></div>
-                  </div>
-                  <!-- skill item -->
-                  <div class="skill-item">
-                    <div class="skill-info clearfix">
-                      <h4 class="float-left mb-3 mt-0">
-                        DevOps(CI/CD, build, release automation..etc)
-                      </h4>
-                      <span class="float-right">95%</span>
-                    </div>
-                    <div class="progress">
-                      <div
-                        class="progress-bar data-background progress-bar-striped"
-                        role="progressbar"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                        aria-valuenow="95"
-                        data-color="#45d7b5"
-                      ></div>
-                    </div>
-                    <div class="spacer" data-height="20"></div>
-                  </div>
-                </div>
-                <!-- main line -->
-                <span class="line"></span>
+            <div class="col-lg-12">
+              <div class="section-title">
+                <h3>Professional Experience</h3>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- section experience -->
-      <section id="experience">
-        <div class="container">
-          <!-- section title -->
-          <h2 class="section-title wow fadeInUp">Experience</h2>
-          <div class="spacer" data-height="60"></div>
           <div class="row">
-            <div class="col">
-              <!-- timeline wrapper -->
-              <div
-                class="timeline exp bg-white rounded shadow-dark padding-30 overflow-hidden"
-              >
-                <!-- timeline item -->
-                <div class="timeline-container wow fadeInUp">
-                  <div class="content">
-                    <span class="time">08/2021 - Ongoing</span>
-                    <h3 class="title">Senior Software Engineer</h3>
-                    <h6 class="m-0">Microsoft, Washington, USA</h6>
-                    <ul class="text-mute ml-2 pl-1">
-                      <li>
-                        Experienced in working on DevOps /Agile operations
-                        process and tools area (Code review, unit test
-                        automation, Build & Release automation Environment,
-                        Incident and Change Management) including various tools.
-                      </li>
-                      <li>
-                        Developed Shell/Python scripts to automate the
-                        deployment process.
-                      </li>
-                      <li>
-                        Working as a DevOps Engineer for multiple development
-                        teams, system analysis team to establish a build
-                        schedule, provide a guideline for deployment in higher
-                        environments and with troubleshooting build system
-                        failures.
-                      </li>
-                      <li>
-                        Wrote Powershell scripts for .Net application deploys,
-                        service installs and for windows patches/upgrades.
-                      </li>
-                      <li>
-                        Used Continuous development, Continuous Integration (CI)
-                        and Continuous Deployment (CD)in runtime with VSTS
-                      </li>
-                      <li>
-                        Automated various infrastructure activities like
-                        Continues deployment, Continues Integration and
-                        Continues Delivery.
-                      </li>
+            <div class="col-lg-12">
+              <div class="experience-timeline">
+                <div class="experience-item">
+                  <div class="experience-header">
+                    <div class="company-info">
+                      <h4>Senior Software Engineer</h4>
+                      <h5>Microsoft</h5>
+                      <span class="duration">2021 - Present</span>
+                      <span class="location">Redmond, US</span>
+                    </div>
+                    <div class="company-logo">
+                      <i class="fab fa-microsoft"></i>
+                    </div>
+                  </div>
+                  <div class="experience-content">
+                    <ul>
+                      <li>Designed and implemented internal automation tools using C#, PowerShell, .NET Core APIs, and YAML, reducing manual tasks and boosting productivity by 70%</li>
+                      <li>Developed an API to automate binary signing during pipelines and built an Angular-based real-time SPA dashboard integrated with Azure services</li>
+                      <li>Built a robust Git semantic versioning library in .NET, enabling custom versioning and seamless integration for packaging workflows</li>
+                      <li>Managed and optimized over 3000+ pipelines for multiple teams, improving deployment efficiency by 70% through multi-stage YAML-based CI/CD automation</li>
+                      <li>Experienced in deploying applications on Azure App Services and automating infrastructure provisioning using ARM templates</li>
                     </ul>
-                    <p></p>
+                    <div class="tech-stack mt-3">
+                      <strong>Technologies:</strong> C#, PowerShell, .NET Core, Angular, Azure DevOps, YAML, ARM Templates, Azure App Services, Azure Key Vault, Git, REST APIs
+                    </div>
                   </div>
                 </div>
-                <div class="timeline-container wow fadeInUp">
-                  <div class="content">
-                    <span class="time">10/2019 - 08/2021</span>
-                    <h3 class="title mb-1">Full Stack Developer</h3>
-                    <h6 class="m-0">North American University, Texas, USA</h6>
-                    <p>
-                      Administer end-to-end activities involved in designing,
-                      creating, and maintaining data interfaces. Direct overall
-                      activities encompassing development, deployment, and
-                      testing of changes to enhance working efficiency. Steer
-                      numerous operations surrounding development of large - and
-                      small - scale web/database application. Develop new
-                      functionality to meet set demand. Oversee all phases of
-                      software development life cycle including requirements,
-                      design, development, testing, deployment and support.
-                      Create and manage numerous projects for university
-                      including inventory system, integration of bank system,
-                      donation system boot camp system. Prepare user guides and
-                      documentation to assist the team regarding usage of
-                      system. Offer continuous support to front-end development
-                      team in executing overall functions. Plan and draft taste
-                      case for projects and report directly to the head of the
-                      IT department. Identify and resolve underperforming areas
-                      of www.na.edu.
-                    </p>
-                    <p class="text-mute ml-5">
-                      • Managed and executed key projects including Auto
-                      Generate Certificate System, Inventory System, and
-                      Donation System.
-                    </p>
+                
+                <div class="experience-item">
+                  <div class="experience-header">
+                    <div class="company-info">
+                      <h4>Full Stack Developer</h4>
+                      <h5>North American University</h5>
+                      <span class="duration">2020 - 2021</span>
+                      <span class="location">New York, US</span>
+                    </div>
+                    <div class="company-logo">
+                      <i class="fas fa-university"></i>
+                    </div>
+                  </div>
+                  <div class="experience-content">
+                    <ul>
+                      <li>Migrated the School Management System from PHP (Symfony) to .NET and Angular, boosting performance by 70%</li>
+                      <li>Developed a secure online exam module to reduce cheating by 80% and implemented an auto-certificate generation system</li>
+                      <li>Achieved 99% decrease in lost environment through comprehensive IT inventory system</li>
+                      <li>Enhanced code quality by 90% through Test-Driven Development (TDD) and Integration testing</li>
+                      <li>Migrated all on-premise applications to Microsoft Azure, leveraging PaaS and IaaS solutions</li>
+                    </ul>
+                    <div class="tech-stack mt-3">
+                      <strong>Technologies:</strong> .NET, Angular, PHP (Symfony), MySQL, Azure, Entity Framework, TDD, REST APIs, HTML5/CSS3, JavaScript
+                    </div>
                   </div>
                 </div>
-                <div class="timeline-container wow fadeInUp">
-                  <div class="content">
-                    <span class="time">09/2016 – 10/2019</span>
-                    <h3 class="title mb-1">BACK END DEVELOPER</h3>
-                    <h6 class="m-0">MIG, Dushanbe, Tajikistan</h6>
-                    <p>
-                      Steered overall facets of application development process
-                      ranging from early design to testing and launch of the
-                      product. Assisted front-end development team in performing
-                      day-to-day task and reported directly to head of the
-                      backend development team. Created and upheld the
-                      Application Programming Interface (API) to define
-                      interactions between multiple software intermediaries.
-                      Coordinated with other developers to deliver internal and
-                      external back-end applications in timely fashion. Wrote
-                      clean and maintainable code. Explored and proposed
-                      effective solution in accordance with client requirements.
-                      Collaborated with testing teams to uncover and rectify
-                      both development and live issues. Executed multistage
-                      projects including ERP/HR system and developed big
-                      software. Possessed in-depth working knowledge of ASP. Net
-                      Core, EF Core, and Postgresql.
-                    </p>
-                    <p class="text-mute ml-5">
-                      • Developed ERP software for Government Company from
-                      scratch resulted in generating 500k profit for company.
-                    </p>
-                    <p class="text-mute ml-5">
-                      • Managed and executed key projects including HR System,
-                      School Management System, Hospital Information System, and
-                      Accounting System.
-                    </p>
+                
+                <div class="experience-item">
+                  <div class="experience-header">
+                    <div class="company-info">
+                      <h4>Full Stack Developer</h4>
+                      <h5>MIG</h5>
+                      <span class="duration">2014 - 2019</span>
+                      <span class="location">Dushanbe, Tajikistan</span>
+                    </div>
+                    <div class="company-logo">
+                      <i class="fas fa-building"></i>
+                    </div>
+                  </div>
+                  <div class="experience-content">
+                    <ul>
+                      <li>Engineered HR system overseeing staff management, recruitment, administration, payroll, and HR planning</li>
+                      <li>Led front-end application development in .NET, JS and AJAX using C# and back-end development in SQL Server</li>
+                      <li>Conducted proof-of-concept projects applying .NET MVC pattern and Repository pattern</li>
+                      <li>Implemented AngularJS to interact with RESTful web services and executed JWT auth/role for authentication</li>
+                      <li>Managed multistage projects, including ERP/HR systems with comprehensive expertise in ASP.Net Core, EF Core, PostgreSQL</li>
+                    </ul>
+                    <div class="tech-stack mt-3">
+                      <strong>Technologies:</strong> C#, .NET Framework, ASP.NET Core, AngularJS, SQL Server, PostgreSQL, Entity Framework, JWT, AJAX, HTML/CSS, JavaScript
+                    </div>
                   </div>
                 </div>
-                <!-- main line -->
-                <span class="line"></span>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- End Experience Section -->
+      
+      <!-- Achievements Section -->
+      <section id="achievements" class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-title">
+                <h3>Key Achievements</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="achievement-card enhanced">
+                <div class="achievement-header">
+                  <div class="achievement-icon">
+                    <i class="fas fa-rocket"></i>
+                  </div>
+                  <div class="achievement-number">70%</div>
+                </div>
+                <div class="achievement-content">
+                  <h4>Productivity Boost</h4>
+                  <p>Designed and implemented internal automation tools at Microsoft, reducing manual tasks and boosting productivity by 70%</p>
+                  <div class="achievement-metric">
+                    <span class="metric-label">Improvement</span>
+                    <span class="metric-value">70%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="achievement-card enhanced">
+                <div class="achievement-header">
+                  <div class="achievement-icon">
+                    <i class="fas fa-cogs"></i>
+                  </div>
+                  <div class="achievement-number">3000+</div>
+                </div>
+                <div class="achievement-content">
+                  <h4>Pipelines Managed</h4>
+                  <p>Managed and optimized over 3000+ pipelines for multiple teams, improving deployment efficiency by 70%</p>
+                  <div class="achievement-metric">
+                    <span class="metric-label">Pipelines</span>
+                    <span class="metric-value">3000+</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="achievement-card enhanced">
+                <div class="achievement-header">
+                  <div class="achievement-icon">
+                    <i class="fas fa-shield-alt"></i>
+                  </div>
+                  <div class="achievement-number">80%</div>
+                </div>
+                <div class="achievement-content">
+                  <h4>Cheating Reduction</h4>
+                  <p>Developed secure online exam module at NAU, reducing cheating by 80% and improving academic integrity</p>
+                  <div class="achievement-metric">
+                    <span class="metric-label">Reduction</span>
+                    <span class="metric-value">80%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="achievement-card enhanced">
+                <div class="achievement-header">
+                  <div class="achievement-icon">
+                    <i class="fas fa-chart-line"></i>
+                  </div>
+                  <div class="achievement-number">70%</div>
+                </div>
+                <div class="achievement-content">
+                  <h4>Performance Improvement</h4>
+                  <p>Migrated School Management System from PHP to .NET and Angular, boosting performance by 70%</p>
+                  <div class="achievement-metric">
+                    <span class="metric-label">Improvement</span>
+                    <span class="metric-value">70%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="achievement-card enhanced">
+                <div class="achievement-header">
+                  <div class="achievement-icon">
+                    <i class="fas fa-search"></i>
+                  </div>
+                  <div class="achievement-number">99%</div>
+                </div>
+                <div class="achievement-content">
+                  <h4>Equipment Tracking</h4>
+                  <p>Achieved 99% decrease in lost environment through comprehensive IT inventory system implementation</p>
+                  <div class="achievement-metric">
+                    <span class="metric-label">Tracking</span>
+                    <span class="metric-value">99%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="achievement-card enhanced">
+                <div class="achievement-header">
+                  <div class="achievement-icon">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <div class="achievement-number">90%</div>
+                </div>
+                <div class="achievement-content">
+                  <h4>Bug Reduction</h4>
+                  <p>Enhanced code quality by 90% through Test-Driven Development (TDD) and Integration testing</p>
+                  <div class="achievement-metric">
+                    <span class="metric-label">Reduction</span>
+                    <span class="metric-value">90%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Achievements Section -->
+      
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-title">
+                <h3>Technical Skills</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="skill-category">
+                <div class="skill-category-header">
+                  <i class="fab fa-python"></i>
+                  <h4>Programming Languages</h4>
+                </div>
+                <div class="skill-tags">
+                  <span class="skill-tag">C#</span>
+                  <span class="skill-tag">JavaScript</span>
+                  <span class="skill-tag">TypeScript</span>
+                  <span class="skill-tag">PHP</span>
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">C++</span>
+                  <span class="skill-tag">C</span>
+                  <span class="skill-tag">PowerShell</span>
+                  <span class="skill-tag">HTML</span>
+                  <span class="skill-tag">SQL</span>
+                  <span class="skill-tag">LINQ</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="skill-category">
+                <div class="skill-category-header">
+                  <i class="fab fa-react"></i>
+                  <h4>Frameworks & Libraries</h4>
+                </div>
+                <div class="skill-tags">
+                  <span class="skill-tag">.NET Core</span>
+                  <span class="skill-tag">.NET Framework</span>
+                  <span class="skill-tag">ASP.NET</span>
+                  <span class="skill-tag">ASP.NET Core</span>
+                  <span class="skill-tag">Angular</span>
+                  <span class="skill-tag">React</span>
+                  <span class="skill-tag">AngularJS</span>
+                  <span class="skill-tag">Entity Framework</span>
+                  <span class="skill-tag">Symfony</span>
+                  <span class="skill-tag">Laravel</span>
+                  <span class="skill-tag">Bootstrap</span>
+                  <span class="skill-tag">jQuery</span>
+                  <span class="skill-tag">Razor Pages</span>
+                  <span class="skill-tag">Web API</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="skill-category">
+                <div class="skill-category-header">
+                  <i class="fas fa-server"></i>
+                  <h4>Databases & Storage</h4>
+                </div>
+                <div class="skill-tags">
+                  <span class="skill-tag">SQL Server</span>
+                  <span class="skill-tag">PostgreSQL</span>
+                  <span class="skill-tag">MySQL</span>
+                  <span class="skill-tag">LINQ</span>
+                  <span class="skill-tag">Azure SQL</span>
+                  <span class="skill-tag">MongoDB</span>
+                  <span class="skill-tag">Redis</span>
+                  <span class="skill-tag">MS SQL Server</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="skill-category">
+                <div class="skill-category-header">
+                  <i class="fab fa-microsoft"></i>
+                  <h4>Cloud & DevOps</h4>
+                </div>
+                <div class="skill-tags">
+                  <span class="skill-tag">Azure DevOps</span>
+                  <span class="skill-tag">Azure App Services</span>
+                  <span class="skill-tag">Azure Key Vault</span>
+                  <span class="skill-tag">Azure</span>
+                  <span class="skill-tag">AWS S3</span>
+                  <span class="skill-tag">AWS</span>
+                  <span class="skill-tag">Docker</span>
+                  <span class="skill-tag">CI/CD</span>
+                  <span class="skill-tag">Terraform</span>
+                  <span class="skill-tag">ARM Templates</span>
+                  <span class="skill-tag">Infrastructure Automation</span>
+                  <span class="skill-tag">Cloud Architecture</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="skill-category">
+                <div class="skill-category-header">
+                  <i class="fab fa-github"></i>
+                  <h4>Tools & Platforms</h4>
+                </div>
+                <div class="skill-tags">
+                  <span class="skill-tag">Git</span>
+                  <span class="skill-tag">GitHub</span>
+                  <span class="skill-tag">Bitbucket</span>
+                  <span class="skill-tag">GitLab</span>
+                  <span class="skill-tag">Jira</span>
+                  <span class="skill-tag">Trello</span>
+                  <span class="skill-tag">VSTS</span>
+                  <span class="skill-tag">SonarQube</span>
+                  <span class="skill-tag">Grafana</span>
+                  <span class="skill-tag">Vite</span>
+                  <span class="skill-tag">Chakra UI</span>
+                  <span class="skill-tag">Version Control</span>
+                  <span class="skill-tag">Monitoring Tools</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="skill-category">
+                <div class="skill-category-header">
+                  <i class="fas fa-cogs"></i>
+                  <h4>Architecture & Testing</h4>
+                </div>
+                <div class="skill-tags">
+                  <span class="skill-tag">MVC Pattern</span>
+                  <span class="skill-tag">Repository Pattern</span>
+                  <span class="skill-tag">Clean Architecture</span>
+                  <span class="skill-tag">DDD</span>
+                  <span class="skill-tag">REST APIs</span>
+                  <span class="skill-tag">REST API</span>
+                  <span class="skill-tag">JWT</span>
+                  <span class="skill-tag">TDD</span>
+                  <span class="skill-tag">Unit Testing</span>
+                  <span class="skill-tag">Solid Principle</span>
+                  <span class="skill-tag">Unit Of Work</span>
+                  <span class="skill-tag">Singleton</span>
+                  <span class="skill-tag">OOP</span>
+                  <span class="skill-tag">Micro-Services</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="skill-category">
+                <div class="skill-category-header">
+                  <i class="fas fa-laptop-code"></i>
+                  <h4>IDEs & Operating Systems</h4>
+                </div>
+                <div class="skill-tags">
+                  <span class="skill-tag">Visual Studio</span>
+                  <span class="skill-tag">Visual Studio Code</span>
+                  <span class="skill-tag">IntelliJ IDEA</span>
+                  <span class="skill-tag">Eclipse</span>
+                  <span class="skill-tag">PhpStorm</span>
+                  <span class="skill-tag">SQL Developer</span>
+                  <span class="skill-tag">Windows</span>
+                  <span class="skill-tag">Linux</span>
+                  <span class="skill-tag">MacOS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       <section id="works">
         <div class="container">
@@ -1301,18 +1354,26 @@
             <div class="col-md-4 col-sm-6 grid-item art">
               <div class="portfolio-item rounded shadow-dark">
                 <div class="details">
-                  <span class="term">WEB</span>
-                  <h4 class="title">Inventory Managment System</h4>
-                  <a class="more-button" href="https://github.com/rahajustone"
+                  <span class="term">ENTERPRISE SOLUTION</span>
+                  <h4 class="title">Inventory Management System</h4>
+                  <p class="project-description">Full-stack enterprise inventory solution with real-time tracking, barcode integration, automated reporting, and multi-location support.</p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">.NET Core</span>
+                    <span class="tech-tag">Angular</span>
+                    <span class="tech-tag">Entity Framework</span>
+                    <span class="tech-tag">SQL Server</span>
+                  </div>
+                  <a class="more-button" href="https://github.com/rahajustone" target="_blank" rel="noopener noreferrer"
                     ><i class="fab fa-github"></i
                   ></a>
                 </div>
                 <div class="thumb p-1">
                   <img
                     src="images/projects/itinventory.png"
-                    alt="Portfolio-title"
+                    alt="Inventory Management System"
                     width="330"
                     height="267"
+                    loading="lazy"
                   />
                   <div class="mask"></div>
                 </div>
@@ -1323,18 +1384,26 @@
             <div class="col-md-4 col-sm-6 grid-item art">
               <div class="portfolio-item rounded shadow-dark">
                 <div class="details">
-                  <span class="term">WEB</span>
-                  <h4 class="title">Auto Generate Certificates</h4>
-                  <a class="more-button" href="https://github.com/rahajustone"
+                  <span class="term">EDUCATION PLATFORM</span>
+                  <h4 class="title">Certificate Generation System</h4>
+                  <p class="project-description">Automated digital certificate platform with custom templates, batch processing, and secure verification system.</p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">Laravel</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Bootstrap</span>
+                  </div>
+                  <a class="more-button" href="https://github.com/rahajustone" target="_blank" rel="noopener noreferrer"
                     ><i class="fab fa-github"></i
                   ></a>
                 </div>
                 <div class="thumb p-1">
                   <img
                     src="images/projects/certificate.png"
-                    alt="Portfolio-title"
+                    alt="Auto Generate Certificates"
                     width="330"
                     height="267"
+                    loading="lazy"
                   />
                   <div class="mask"></div>
                 </div>
@@ -1345,21 +1414,150 @@
             <div class="col-md-4 col-sm-6 grid-item art">
               <div class="portfolio-item rounded shadow-dark">
                 <div class="details">
-                  <span class="term">WEB / API</span>
-                  <h4 class="title">ERP</h4>
+                  <span class="term">GOVERNMENT ERP</span>
+                  <h4 class="title">Enterprise Resource Planning</h4>
+                  <p class="project-description">Comprehensive ERP system for government agencies with integrated HR, finance, procurement, and reporting modules.</p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">.NET Core</span>
+                    <span class="tech-tag">Entity Framework</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Angular</span>
+                  </div>
                   <a
                     class="more-button"
                     href="http://www.mig.tj/#mohirIT"
                     target="_blank"
+                    rel="noopener noreferrer"
                     ><i class="icon-link"></i
                   ></a>
                 </div>
                 <div class="thumb p-1">
                   <img
                     src="images/projects/erp.png"
-                    alt="Portfolio-title"
+                    alt="ERP System"
                     width="330"
                     height="267"
+                    loading="lazy"
+                  />
+                  <div class="mask"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- portfolio item -->
+            <div class="col-md-4 col-sm-6 grid-item art">
+              <div class="portfolio-item rounded shadow-dark">
+                <div class="details">
+                  <span class="term">MICROSOFT INTERNAL</span>
+                  <h4 class="title">Digital Signing Portal</h4>
+                  <p class="project-description">Enterprise-grade signing platform for firmware, drivers, and application binaries with real-time monitoring and automated workflows.</p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">Angular</span>
+                    <span class="tech-tag">Azure DevOps</span>
+                    <span class="tech-tag">PowerShell</span>
+                  </div>
+                  <a class="more-button" href="#" target="_blank" rel="noopener noreferrer"
+                    ><i class="fab fa-microsoft"></i
+                  ></a>
+                </div>
+                <div class="thumb p-1">
+                  <img
+                    src="images/projects/certificate.png"
+                    alt="Internal Signing Portal"
+                    width="330"
+                    height="267"
+                    loading="lazy"
+                  />
+                  <div class="mask"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- portfolio item -->
+            <div class="col-md-4 col-sm-6 grid-item art">
+              <div class="portfolio-item rounded shadow-dark">
+                <div class="details">
+                  <span class="term">DEVELOPMENT TOOL</span>
+                  <h4 class="title">Git Semantic Versioning</h4>
+                  <p class="project-description">Custom .NET library for automated semantic versioning with Git integration, supporting complex versioning strategies and CI/CD pipelines.</p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">.NET Core</span>
+                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">CI/CD</span>
+                    <span class="tech-tag">NuGet</span>
+                  </div>
+                  <a class="more-button" href="#" target="_blank" rel="noopener noreferrer"
+                    ><i class="fab fa-microsoft"></i
+                  ></a>
+                </div>
+                <div class="thumb p-1">
+                  <img
+                    src="images/projects/erp.png"
+                    alt="Git Semantic Versioning"
+                    width="330"
+                    height="267"
+                    loading="lazy"
+                  />
+                  <div class="mask"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- portfolio item -->
+            <div class="col-md-4 col-sm-6 grid-item art">
+              <div class="portfolio-item rounded shadow-dark">
+                <div class="details">
+                  <span class="term">EDUCATION PLATFORM</span>
+                  <h4 class="title">School Management System</h4>
+                  <p class="project-description">Modernized legacy PHP system to .NET Core with 70% performance improvement, featuring online exams and automated certificate generation.</p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">.NET Core</span>
+                    <span class="tech-tag">Angular</span>
+                    <span class="tech-tag">Azure</span>
+                    <span class="tech-tag">Entity Framework</span>
+                  </div>
+                  <a class="more-button" href="#" target="_blank" rel="noopener noreferrer"
+                    ><i class="icon-link"></i
+                  ></a>
+                </div>
+                <div class="thumb p-1">
+                  <img
+                    src="images/projects/itinventory.png"
+                    alt="School Management System"
+                    width="330"
+                    height="267"
+                    loading="lazy"
+                  />
+                  <div class="mask"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- portfolio item -->
+            <div class="col-md-4 col-sm-6 grid-item art">
+              <div class="portfolio-item rounded shadow-dark">
+                <div class="details">
+                  <span class="term">ENTERPRISE HR</span>
+                  <h4 class="title">HR Management System</h4>
+                  <p class="project-description">Comprehensive HR platform with employee lifecycle management, recruitment workflows, payroll processing, and strategic HR analytics.</p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">.NET Core</span>
+                    <span class="tech-tag">SQL Server</span>
+                    <span class="tech-tag">AngularJS</span>
+                    <span class="tech-tag">Entity Framework</span>
+                  </div>
+                  <a class="more-button" href="#" target="_blank" rel="noopener noreferrer"
+                    ><i class="icon-link"></i
+                  ></a>
+                </div>
+                <div class="thumb p-1">
+                  <img
+                    src="images/projects/certificate.png"
+                    alt="HR Management System"
+                    width="330"
+                    height="267"
+                    loading="lazy"
                   />
                   <div class="mask"></div>
                 </div>
@@ -1379,6 +1577,87 @@
         </div>
       </section>
 
+      <!-- section certificates -->
+      <section id="certificates">
+        <div class="container">
+          <!-- section title -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-title">
+                <h3>Course Certificates</h3>
+              </div>
+            </div>
+          </div>
+          <div class="spacer" data-height="60"></div>
+          
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="certificate-card">
+                <div class="certificate-image">
+                  <img src="images/ceritificate/ReactBeginner.png" alt="React Beginner Certificate" />
+                </div>
+                <div class="certificate-content">
+                  <h4>React - The Complete Guide</h4>
+                  <p>Comprehensive React course covering hooks, context, Redux, and modern React patterns. Created live documentation website.</p>
+                  <div class="certificate-meta">
+                    <span class="certificate-platform">Code with Mosh</span>
+                    <span class="certificate-date">2025</span>
+                  </div>
+                  <div class="certificate-links mt-2">
+                    <a href="https://demo-vite4-1.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                      <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="images/ceritificate/ReactBeginner.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline ms-2">
+                      <i class="fas fa-download"></i> Download PDF
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+              <div class="certificate-card">
+                <div class="certificate-image">
+                  <img src="images/ceritificate/ReactIntermediate.png" alt="React Intermediate Certificate" />
+                </div>
+                <div class="certificate-content">
+                  <h4>Advanced React Patterns</h4>
+                  <p>Advanced React concepts including performance optimization, testing, and state management. Built advanced React application.</p>
+                  <div class="certificate-meta">
+                    <span class="certificate-platform">Code with Mosh</span>
+                    <span class="certificate-date">2025</span>
+                  </div>
+                  <div class="certificate-links mt-2">
+                    <a href="https://advanced-course.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                      <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="images/ceritificate/ReactIntermediate.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline ms-2">
+                      <i class="fas fa-download"></i> Download PDF
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+              <div class="certificate-card">
+                <div class="certificate-image">
+                  <img src="images/ceritificate/Angular.png" alt="Angular Certificate" />
+                </div>
+                <div class="certificate-content">
+                  <h4>Angular Development</h4>
+                  <p>Comprehensive Angular framework course covering components, services, routing, and advanced patterns</p>
+                  <div class="certificate-meta">
+                    <span class="certificate-platform">Udemy</span>
+                    <span class="certificate-date">2023</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- section contact -->
       <section id="contact">
         <div class="container">
@@ -1389,11 +1668,24 @@
             <div class="col-md-4">
               <!-- contact info -->
               <div class="contact-info">
-                <h3 class="wow fadeInUp">Let's talk about everything!</h3>
+                <h3 class="wow fadeInUp">Let's Connect!</h3>
                 <p class="wow fadeInUp">
-                  Don't like forms? Send me an
-                  <a href="mailto:kh.rahmatullo@gmail.com">email</a>. 👋
+                  I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology. Whether you're looking for a senior developer, technical consultant, or just want to discuss the latest in software engineering, feel free to reach out!
                 </p>
+                <div class="contact-details mt-4">
+                  <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:kh.rahmatullo@gmail.com">kh.rahmatullo@gmail.com</a>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>New York, USA</span>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Available for new opportunities</span>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-md-8">
@@ -1403,6 +1695,7 @@
                 action="https://formspree.io/f/mwkwajgq"
                 method="POST"
                 target="_blank"
+                id="contactForm"
               >
                 <div class="messages"></div>
                 <div class="row">
@@ -1506,6 +1799,92 @@
     <script>
       const currentYear = new Date().getFullYear();
       document.getElementById("copywritetime").textContent = currentYear;
+      
+      // Dark Mode Toggle
+      document.addEventListener('DOMContentLoaded', function() {
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        
+        // Check for saved dark mode preference
+        const darkMode = localStorage.getItem('darkMode');
+        if (darkMode === 'enabled') {
+          body.classList.add('dark');
+        }
+        
+        // Toggle dark mode
+        darkModeToggle.addEventListener('click', function() {
+          body.classList.toggle('dark');
+          
+          // Save preference
+          if (body.classList.contains('dark')) {
+            localStorage.setItem('darkMode', 'enabled');
+          } else {
+            localStorage.setItem('darkMode', null);
+          }
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+              target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          });
+        });
+        
+        // Add loading animation to buttons
+        document.querySelectorAll('.btn').forEach(button => {
+          button.addEventListener('click', function() {
+            if (!this.classList.contains('btn-toggle')) {
+              this.style.transform = 'scale(0.95)';
+              setTimeout(() => {
+                this.style.transform = '';
+              }, 150);
+            }
+          });
+        });
+        
+        // Form validation
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+          contactForm.addEventListener('submit', function(e) {
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            
+            submitBtn.textContent = 'Sending...';
+            submitBtn.classList.add('loading');
+            
+            setTimeout(() => {
+              submitBtn.textContent = originalText;
+              submitBtn.classList.remove('loading');
+            }, 2000);
+          });
+        }
+        
+        // Add intersection observer for animations
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('fade-in-up');
+            }
+          });
+        }, observerOptions);
+        
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+          observer.observe(section);
+        });
+      });
     </script>
   </body>
 </html>
